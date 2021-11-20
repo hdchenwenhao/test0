@@ -1,0 +1,32 @@
+
+T10BC 000:447 SEGGER J-Link V4.96d Log File (0001ms, 0271ms total)
+T10BC 000:447 DLL Compiled: Jan 29 2015 11:45:37 (0001ms, 0271ms total)
+T10BC 000:447 Logging started @ 2019-12-13 09:36 (0001ms, 0271ms total)
+T10BC 000:448 JLINK_SetWarnOutHandler(...) (0000ms, 0271ms total)
+T10BC 000:448 JLINK_OpenEx(...)
+Firmware: J-Link V9 compiled Oct 25 2018 11:46:07
+Hardware: V9.20
+Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash, RDDI  returns O.K. (0266ms, 0537ms total)
+T10BC 000:714 JLINK_SetErrorOutHandler(...) (0000ms, 0537ms total)
+T10BC 000:714 JLINK_ExecCommand("ProjectFile = "E:\MCU\FHO3000-A8-MCU 2018 06 01（A型光功率计）\user\project\JLinkSettings.ini"", ...)  returns 0x00 (0019ms, 0556ms total)
+T10BC 000:733 JLINK_ExecCommand("Device = STM32F103RC", ...)Device "STM32F103RC" selected.  returns 0x00 (0001ms, 0557ms total)
+T10BC 000:734 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetHardwareVersion()  returns 0x16760 (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetFirmwareString(...) (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetCompileDateTime() (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetFirmwareString(...) (0000ms, 0557ms total)
+T10BC 000:734 JLINK_GetHardwareVersion()  returns 0x16760 (0000ms, 0557ms total)
+T10BC 000:734 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0002ms, 0559ms total)
+T10BC 000:736 JLINK_SetSpeed(200) (0000ms, 0559ms total)
+T10BC 000:736 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)  returns JLINKARM_RESET_TYPE_NORMAL (0000ms, 0559ms total)
+T10BC 000:736 JLINK_Reset() >0x108 TIF>Found SWD-DP with ID 0x1BA01477 >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x108 TIF>Found SWD-DP with ID 0x1BA01477 >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>
+ >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>Found Cortex-M3 r1p1, Little endian. -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU_ReadMem(4 bytes @ 0xE0002000)FPUnit: 6 code (BP) slots and 2 literal slots
+ -- CPU_ReadMem(4 bytes @ 0xE000EDFC) -- CPU_ReadMem(4 bytes @ 0xE0001000) -- CPU_WriteMem(4 bytes @ 0xE0001000) -- CPU_ReadMem(4 bytes @ 0xE000ED88) -- CPU_WriteMem(4 bytes @ 0xE000ED88) -- CPU_ReadMem(4 bytes @ 0xE000ED88) -- CPU_WriteMem(4 bytes @ 0xE000ED88) -- CPU_ReadMem(4 bytes @ 0xE00FF010)TPIU fitted. -- CPU_ReadMem(4 bytes @ 0xE00FF014)ETM fitted. -- CPU_ReadMem(4 bytes @ 0xE00FF018) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC)
+ >0x35 TIF> -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000ED0C) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_ReadMem(4 bytes @ 0xE000EDFC) -- CPU_ReadMem(4 bytes @ 0xE0001000) (0132ms, 0691ms total)
+T10BC 000:868 JLINK_GetId() >0x0D TIF> >0x21 TIF>  returns 0x1BA01477 (0002ms, 0693ms total)
+T10BC 000:872 JLINK_GetFirmwareString(...) (0000ms, 0693ms total)
+T10BC 002:754 JLINK_Close() -- CPU_WriteMem(4 bytes @ 0xE0001004) >0x42 TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> (0010ms, 0703ms total)
+T10BC 002:754  (0010ms, 0703ms total)
+T10BC 002:754 Closed (0010ms, 0703ms total)

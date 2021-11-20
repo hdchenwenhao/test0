@@ -1,0 +1,187 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\项目开发\MINI-OTDR-A8-V1.0\MINI-OTDR-A8-V1.0(STM32)\user\project\MINI-OTDR-A8.uvproj
+Project File Date:  11/10/2016
+
+<h2>Output:</h2>
+Rebuild target 'MINI-OTDR-A8-STM32'
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling MyUart.c...
+..\src\MyUart.c(143): warning:  #550-D: variable "UART1_RxBuffer" was set but never used
+        u8 UART1_RxBuffer;
+..\src\MyUart.c(155): warning:  #940-D: missing return statement at end of non-void function "AT_TO_WIFI_UART_COMMAND"
+  }
+..\src\MyUart.c(225): warning:  #550-D: variable "UART2_RxBuffer" was set but never used
+        unsigned char UART2_RxBuffer=0;
+..\src\MyUart.c: 3 warnings, 0 errors
+compiling delay.c...
+compiling ADC.c...
+..\src\ADC.c(105): warning:  #550-D: variable "opm_voltage" was set but never used
+        float opm_voltage=0;
+..\src\ADC.c: 1 warning, 0 errors
+compiling KEY.c...
+compiling DAC.C...
+compiling IIC_BUS.c...
+compiling Timer.c...
+compiling GPIO_CTL.c...
+..\src\GPIO_CTL.c(143): warning:  #177-D: variable "status" was declared but never referenced
+        unsigned char status=0;
+..\src\GPIO_CTL.c: 1 warning, 0 errors
+compiling RTC.c...
+..\src\RTC.c(253): warning:  #181-D: argument is incompatible with corresponding format string conversion
+      systmtime.tm_mon, systmtime.tm_mday, WEEK_STR[systmtime.tm_wday], systmtime.tm_hour, systmtime.tm_min, systmtime.tm_sec);
+..\src\RTC.c: 1 warning, 0 errors
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=22360 RO-data=456 RW-data=332 ZI-data=1932  
+FromELF: creating hex file...
+"..\..\output\FHO3000A-MCU-V1.0" - 0 Error(s), 6 Warning(s).
+</pre>
+</body>
+</html>
+000A-MCU-V1.0" 
+Set JLink Project File to "D:\项目开发\MINI-OTDR-A8-V1.0\MINI-OTDR-A8-V1.0(STM32)\user\project\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RC" selected (256 KB flash, 48 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+S/N : 12345678 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RC
+VTarget = 1.831V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+nk info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+S/N : 12345678 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RC
+VTarget = 2.128V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+c(81): error:  #393: pointer to incomplete class type is not allowed
+                tm->tm_year -= 1;
+..\src\RTC.c(85): error:  #393: pointer to incomplete class type is not allowed
+                (u32) (tm->tm_year/4 - tm->tm_year/100 + tm->tm_year/400 + 367*tm->tm_mon/12 + tm->tm_mday) +
+..\src\RTC.c(85): error:  #393: pointer to incomplete class type is not allowed
+                (u32) (tm->tm_year/4 - tm->tm_year/100 + tm->tm_year/400 + 367*tm->tm_mon/12 + tm->tm_mday) +
+..\src\RTC.c(85): error:  #393: pointer to incomplete class type is not allowed
+                (u32) (tm->tm_year/4 - tm->tm_year/100 + tm->tm_year/400 + 367*tm->tm_mon/12 + tm->tm_mday) +
+..\src\RTC.c(85): error:  #393: pointer to incomplete class type is not allowed
+                (u32) (tm->tm_year/4 - tm->tm_year/100 + tm->tm_year/400 + 367*tm->tm_mon/12 + tm->tm_mday) +
+..\src\RTC.c(85): error:  #393: pointer to incomplete class type is not allowed
+                (u32) (tm->tm_year/4 - tm->tm_year/100 + tm->tm_year/400 + 367*tm->tm_mon/12 + tm->tm_mday) +
+..\src\RTC.c(86): error:  #393: pointer to incomplete class type is not allowed
+                        tm->tm_year*365 - 719499
+..\src\RTC.c(87): error:  #393: pointer to incomplete class type is not allowed
+            )*24 + tm->tm_hour /* now have hours */
+..\src\RTC.c(88): error:  #393: pointer to incomplete class type is not allowed
+          )*60 + tm->tm_min /* now have minutes */
+..\src\RTC.c(89): error:  #393: pointer to incomplete class type is not allowed
+        )*60 + tm->tm_sec; /* finally seconds */
+..\src\RTC.c(101): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_hour = hms / 3600;
+..\src\RTC.c(102): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_min = (hms % 3600) / 60;
+..\src\RTC.c(103): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_sec = (hms % 3600) % 60;
+..\src\RTC.c(109): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_year = i;
+..\src\RTC.c(112): error:  #393: pointer to incomplete class type is not allowed
+        if (leapyear(tm->tm_year)) {
+..\src\RTC.c(119): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_mon = i;
+..\src\RTC.c(122): error:  #393: pointer to incomplete class type is not allowed
+        tm->tm_mday = day + 1;
+..\src\RTC.c(209): error:  #393: pointer to incomplete class type is not allowed
+        if(tm->tm_year<2016||tm->tm_year>2100)
+..\src\RTC.c(209): error:  #393: pointer to incomplete class type is not allowed
+        if(tm->tm_year<2016||tm->tm_year>2100)
+..\src\RTC.c(211): error:  #393: pointer to incomplete class type is not allowed
+      tm->tm_year = 2016;
+..\src\RTC.c: 1 warning, 30 errors
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_tim.c...
+"..\..\output\FHO2000-MCU-V1.0" - 30 Error(s), 17 Warning(s).
+Target not created
